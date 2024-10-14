@@ -316,7 +316,7 @@ function ChatPanel({
 
 	return (
 		<div
-			className='flex-1 p-4 bg-white/65 rounded-lg shadow-sm m-2 flex flex-col mb-10'
+			className='flex-1 p-4 bg-white/65 rounded-lg shadow-sm m-2 flex flex-col mb-10 max-h-[78vh]'
 			style={{ borderColor: themeColor, borderWidth: "1px" }}
 		>
 			<div className='flex items-center justify-between mb-4'>
