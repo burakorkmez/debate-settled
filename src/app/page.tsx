@@ -230,7 +230,7 @@ export default function ORMChat() {
 						</DialogContent>
 					</Dialog>
 					<Link
-						href='https://github.com/burakorkmez/prisma-vs-drizzle'
+						href='https://github.com/burakorkmez/debate-settled'
 						target='_blank'
 						rel='noopener noreferrer'
 						className={cn(
