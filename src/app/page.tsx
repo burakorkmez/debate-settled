@@ -14,6 +14,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import RotatedText from "@/components/RotatedText";
 
 type Message = {
 	_id: Id<"messages">;
@@ -149,14 +150,17 @@ export default function ORMChat() {
 			<div className='p-4 text-center'>
 				<h1 className='font-bold'>
 					<span className='block font-extrabold uppercase'>Let&apos;s settle the debate</span>
-					<span className='text-5xl block my-2'>
-						<span className='bg-clip-text text-transparent bg-gradient-to-r from-[#5A67D8] to-[#8E94F2]'>
-							PRISMA
-						</span>
+					<span className='text-5xl block my-2 '>
+						<RotatedText className='bg-gradient-to-br from-[#5A67D8] via-[#7A77D8] to-[#DD3CBE]'>
+							Prisma
+						</RotatedText>
 						{" vs "}
-						<span className='bg-clip-text text-transparent bg-gradient-to-r from-[#E63CB6] to-[#F0A6CA]'>
+						<RotatedText
+							className='bg-gradient-to-tl from-[#DD3CBE] via-[#AD52CB] to-[#5A67D8]'
+							tiltDirection='right'
+						>
 							DRIZZLE
-						</span>
+						</RotatedText>
 					</span>
 					<span className='block text-sm text-muted-foreground'>
 						built by
@@ -205,7 +209,8 @@ export default function ORMChat() {
 								</div>
 								<div className='flex items-center space-x-2'>
 									<MessageSquare className='size-4 text-gray-500' />
-									<p>You have 3 messages per day</p>
+									<p>You have 3 messages per day, use it </p>
+									<RotatedText>wisely</RotatedText>
 								</div>
 								<div className='flex items-center space-x-2'>
 									<Youtube className='h-5 w-5 text-gray-500' />
